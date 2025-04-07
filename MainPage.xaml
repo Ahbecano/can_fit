@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CanFitApp.MainPage"
+             BackgroundColor="White">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+        <!-- Logo -->
+        <Image Source="logo.png" WidthRequest="150" HeightRequest="150" />
+
+        <!-- Başlık -->
+        <Label Text="CANFİT" 
+               FontSize="28" 
+               FontAttributes="Bold" 
+               TextColor="Black" 
+               HorizontalOptions="Center"/>
+
+        <Label Text="HAREKET ET VE GÜÇLEN!" 
+               FontSize="16" 
+               TextColor="Black"
+               HorizontalOptions="Center"/>
+
+        <!-- Açıklama -->
+        <Label Text="Egzersize Başlamaya Hazır Mısın ?" 
+               FontSize="18" 
+               Margin="0,30,0,20"
+               TextColor="Black"
+               HorizontalOptions="Center"/>
+
+        <!-- Egzersize Başla Butonu -->
+        <Button Text="Egzersize Başla" 
+                BackgroundColor="LightGray" 
+                TextColor="Black"
+                WidthRequest="200"
+                Clicked="OnStartExerciseClicked"/>
+
+        <!-- İlerlemeni Gör Butonu -->
+        <Button Text="İlerlemeni Gör" 
+                BackgroundColor="LightGray" 
+                TextColor="Black"
+                WidthRequest="200"
+                Margin="0,10,0,0"
+                Clicked="OnViewProgressClicked"/>
+
+    </StackLayout>
+</ContentPage>
